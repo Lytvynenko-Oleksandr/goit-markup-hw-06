@@ -406,32 +406,44 @@
             <Form class="modal-form">
                 <label class="form-decoration">
                     Name
-                    <input type="text" class="form-element" name="user_name" required>
-                    <svg width="18px" height="18px">
-                        <use href="./images/split.svg#icon-user"></use>
-                    </svg>
+                    <span class="icon-form">
+                        <input type="text" class="form-element" name="user_name" required>
+                        <svg width="18px" height="18px">
+                            <use href="./images/split.svg#icon-user"></use>
+                        </svg>
+                    </span>
                 </label>
                 <label class="form-decoration">
                     Phone
-                    <input type="tel" class="form-element" name="user_phone" required>
-                    <svg width="18px" height="24px">
-                        <use href="./images/split.svg#icon-phone"></use>
-                    </svg>
+                    <span class="icon-form">
+                        <input type="tel" class="form-element" name="user_phone" required>
+                        <svg width="18px" height="24px">
+                            <use href="./images/split.svg#icon-phone"></use>
+                        </svg>
+                    </span>
                 </label>
                 <label class="form-decoration">
                     Email
-                    <input type="email" class="form-element" name="user_email" required>
-                    <svg width="24px" height="24px">
-                        <use href="./images/split.svg#icon-email"></use>
-                    </svg>
+                    <span class="icon-form">
+                        <input type="email" class="form-element" name="user_email" required>
+                        <svg width="24px" height="24px">
+                            <use href="./images/split.svg#icon-email"></use>
+                        </svg>
+                    </span>
                 </label>
                 <label class="form-decoration">
                     Comment
-                    <textarea name="user_message" class="feedback" placeholder="Text input"></textarea>
+                    <textarea name="user_message" class="feedback form-element" placeholder="Text input"></textarea>
                 </label>
-                <input type="checkbox" id="accept" name="accept">
-                <label class="accept
-                " for="accept">I accept the terms and conditions of the <span>Privacy Policy</span></label>
+                <input type="checkbox" id="accept" name="user_policy" class="user-policy visualy">
+                <label class="accept" for="accept">
+                    <span class="fake-chekbox">
+                        <svg width="16px" height='16px'>
+                            <use href="./images/split.svg#icon-chekbox">
+                            </use>
+                        </svg>
+                    </span>
+                    I accept the terms and conditions of the<span>Privacy Policy</span></label>
 
                 <button class="modal-btn" type="submit">Send</button>
 
